@@ -12,6 +12,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'VT323', sans-serif;
 }
 
 .bar {
@@ -55,10 +56,44 @@ body {
 
 .parameters {
  margin: 0 auto;
+ 
 }
 
 .parameters ul li {
-  
+  font-size: 4rem;
+
+}
+
+.heart_sprite {
+      height: 40px;
+      width: 40px;
+      background: url("images/icons.png") -25px -25px;
+      display:inline-block;
+
+}
+
+.apple_sprite {
+  height: 40px;
+  width: 40px;
+  background: url("images/icons.png") -25px -115px;
+  display: inline-block;
+
+}
+
+.sleepy_sprite {
+  height: 40px;
+  width: 40px;
+  background: url("images/icons.png") -25px -200px;
+  display: inline-block;
+
+}
+
+.ball_sprite {
+  height: 40px;
+  width: 40px;
+  background: url("images/icons.png") -25px -290px;
+  display: inline-block;
+
 }
 
 .view {
@@ -72,6 +107,14 @@ body {
     
 }
 
+.tamagotchi_sprite {
+  height: 130px;
+  width: 152px;
+  background: url("images/tamago.png") -40px -25px;
+  margin: 4rem auto;
+  border-bottom: 8px solid white;
+}
+
 .status {
   /* Line 2 (Stroke) */
     background: #E7F6FD;
@@ -79,7 +122,6 @@ body {
     max-height:58px;
     text-align:center;
     padding: 0.5rem 3rem;
-    font-family: 'VT323', sans-serif;
     font-size: 2rem;
 }
 
@@ -91,6 +133,7 @@ body {
   display:flex;
   flex-direction: row;
   margin: 0 auto;
+
 }
 
 .actions ul li {
@@ -109,10 +152,11 @@ body {
     box-shadow: 0px 7px 0px #724D50;
     margin-left: 1rem;
     margin-right: 1rem;
+    padding: 0.6rem;
     
 }
 
 
-.actions button {
+/* .actions button {
   display:none;
-}
+} */
