@@ -8,6 +8,10 @@ body {
   background: #1c1c1c;
   overflow: hidden;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .bar {
@@ -23,6 +27,92 @@ body {
   max-width: 420px;
   background: #f8d26d;
   border-radius: 10px;
+  margin: 0.5rem auto;
+  height: 41rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  }
+
+.display  {
+  /* Rectangle 965 */
+
+    box-sizing: border-box;
+    max-height: 477px;
+    background: #CDEDFC;
+    border: 10px solid #DFA46D;
+    box-shadow: inset 0 0 0 0.625rem #E7F6FD;
+    padding: 1.5rem;
+    margin-bottom: 1.75rem;
+    display: flex;
+    flex-direction: column;
+   
+    
+
+}
+
+.parameters {
+ margin: 0 auto;
+}
+
+.parameters ul li {
+  
+}
+
+.view {
+  /* Rectangle 1228 */
+  
+    box-sizing: border-box;
+    border: 7px solid #9FDCF9;
+    width: 292px;
+    height:280px;
+    margin-bottom: 0.75rem;
+    
+}
+
+.status {
+  /* Line 2 (Stroke) */
+    background: #E7F6FD;
+    max-width:292px;
+    max-height:58px;
+    text-align:center;
+    padding: 0.5rem 3rem;
+    font-family: 'VT323', sans-serif;
+    font-size: 2rem;
+}
+
+.parameters ul li, .actions ul li {
+  display: inline-block;
+}
+
+.actions {
+  display:flex;
+  flex-direction: row;
   margin: 0 auto;
-  height: 657px;
+}
+
+.actions ul li {
+
+  /* Ellipse 19 */
+  
+    box-sizing: border-box;
+    width: 68.18px;
+    height: 68.06px;
+    /* Yellow */
+    background: #F8D26D;
+    /* Timber */
+    border: 5px solid #DFA46D;
+    border-radius: 50%;
+    /* Button shadow */
+    box-shadow: 0px 7px 0px #724D50;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+}
+
+
+.actions button {
+  display:none;
 }
