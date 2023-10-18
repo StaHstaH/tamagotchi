@@ -38,8 +38,6 @@ body {
   }
 
 .display  {
-  /* Rectangle 965 */
-
     box-sizing: border-box;
     max-height: 477px;
     background: #CDEDFC;
@@ -97,8 +95,6 @@ body {
 }
 
 .view {
-  /* Rectangle 1228 */
-  
     box-sizing: border-box;
     border: 7px solid #9FDCF9;
     width: 292px;
@@ -137,9 +133,6 @@ body {
 }
 
 .actions ul li {
-
-  /* Ellipse 19 */
-  
     box-sizing: border-box;
     width: 68.18px;
     height: 68.06px;
