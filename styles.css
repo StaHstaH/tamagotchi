@@ -1,3 +1,14 @@
+:root {
+  --white: rgba(255, 255, 255, 1);
+  --blue: rgba(159, 220, 249, 1);
+  --lightblue: rgba(205, 237, 252, 1);
+  --lightestblue: rgba(231, 246, 253, 1);
+  --plum: rgba(114, 77, 80, 1);
+  --timber: rgba(223, 164, 109, 1);
+  --yellow: rgba(248, 210, 109, 1);
+  --dark: rgba(28, 28, 28, 1);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +16,7 @@
 }
 
 body {
-  background: rgba(28, 28, 28, 1);
+  background: var(--dark);
   overflow: hidden;
   height: 100vh;
   display: flex;
@@ -15,18 +26,13 @@ body {
   font-family: 'VT323', monospace;
 }
 
-.bar {
-  color: black;
-  padding: 16px;
-}
-
 .health {
   padding: 16px;
 }
 
 .gameBoy {
   max-width: 420px;
-  background: rgba(248, 210, 109, 1);
+  background: var(--yellow);
   border-radius: 10px;
   margin: 0.5rem auto;
   height: 41rem;
@@ -39,24 +45,29 @@ body {
 
 .display  {
     box-sizing: border-box;
-    background: rgba(205, 237, 252, 1);
-    border: 10px solid rgba(223, 164, 109, 1);
-    box-shadow: inset 0 0 0 0.625rem rgba(231, 246, 253, 1);
+    background: var(--lightblue);
+    border: 10px solid var(--timber);
+    box-shadow: inset 0 0 0 0.625rem var(--lightestblue);
     padding: 1.5rem;
     margin-bottom: 1.75rem;
     display: flex;
     flex-direction: column;
 }
 
-.parameters {
+.parameters figure {
  margin: 0 auto;
- color: rgba(114, 77, 80, 1);
+ color: var(--plum);
  display: flex;
  flex-direction: row;
  align-items: center;
  justify-content: center;
  font-size: 3.75rem;
  line-height: 3.75rem;
+}
+
+.parameters {
+  display:flex;
+  flex-direction:row;
 }
 
 
@@ -100,7 +111,7 @@ body {
 
 .view {
     box-sizing: border-box;
-    border: 7px solid rgba(159, 220, 249, 1);
+    border: 7px solid var(--blue);
     width: 292px;
     height:280px;
     margin-bottom: 0.75rem;
@@ -112,16 +123,16 @@ body {
   width: 152px;
   background: url("images/tamago.png") -40px -25px;
   margin: 4rem auto;
-  border-bottom: 8px solid white;
+  border-bottom: 8px solid var(--white);
 }
 
 .status {
-    background: rgba(231, 246, 253, 1);
+    background: var(--lightestblue);
     max-width:292px;
     text-align: center;
     padding: 0.5rem 3rem;
     font-size: 4rem;
-    color:rgba(114, 77, 80, 1);
+    color:var(--plum);
 }
 
 .parameters ul li, .actions ul li {
@@ -139,10 +150,10 @@ body {
     box-sizing: border-box;
     width: 68.18px;
     height: 68.06px;
-    background: rgba(248, 210, 109, 1);
-    border: 5px solid rgba(223, 164, 109, 1);
+    background: var(--yellow);
+    border: 5px solid var(--timber);
     border-radius: 50%;
-    box-shadow: 0px 7px 0px rgba(114, 77, 80, 1);
+    box-shadow: 0px 7px 0px var(--plum);
     margin-left: 1rem;
     margin-right: 1rem;
     padding: 0.6rem;
