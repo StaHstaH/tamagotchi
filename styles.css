@@ -1,3 +1,14 @@
+:root {
+  --white: rgba(255, 255, 255, 1);
+  --blue: rgba(159, 220, 249, 1);
+  --lightblue: rgba(205, 237, 252, 1);
+  --lightestblue: rgba(231, 246, 253, 1);
+  --plum: rgba(114, 77, 80, 1);
+  --timber: rgba(223, 164, 109, 1);
+  --yellow: rgba(248, 210, 109, 1);
+  --dark: rgba(28, 28, 28, 1);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,19 +16,14 @@
 }
 
 body {
-  background: #1c1c1c;
+  background: var(--dark);
   overflow: hidden;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'VT323', sans-serif;
-}
-
-.bar {
-  color: black;
-  padding: 16px;
+  font-family: 'VT323', monospace;
 }
 
 .health {
@@ -26,7 +32,7 @@ body {
 
 .gameBoy {
   max-width: 420px;
-  background: #f8d26d;
+  background: var(--yellow);
   border-radius: 10px;
   margin: 0.5rem auto;
   height: 41rem;
@@ -39,27 +45,36 @@ body {
 
 .display  {
     box-sizing: border-box;
-    max-height: 477px;
-    background: #CDEDFC;
-    border: 10px solid #DFA46D;
-    box-shadow: inset 0 0 0 0.625rem #E7F6FD;
+    background: var(--lightblue);
+    border: 10px solid var(--timber);
+    box-shadow: inset 0 0 0 0.625rem var(--lightestblue);
     padding: 1.5rem;
     margin-bottom: 1.75rem;
     display: flex;
     flex-direction: column;
-   
-    
+}
 
+.parameters figure {
+ margin: 0 auto;
+ color: var(--plum);
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+ font-size: 3.75rem;
+ line-height: 3.75rem;
 }
 
 .parameters {
- margin: 0 auto;
- 
+  display:flex;
+  flex-direction:row;
 }
 
-.parameters ul li {
-  font-size: 4rem;
 
+.high_value {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 15%;
 }
 
 .heart_sprite {
@@ -96,7 +111,7 @@ body {
 
 .view {
     box-sizing: border-box;
-    border: 7px solid #9FDCF9;
+    border: 7px solid var(--blue);
     width: 292px;
     height:280px;
     margin-bottom: 0.75rem;
@@ -108,17 +123,16 @@ body {
   width: 152px;
   background: url("images/tamago.png") -40px -25px;
   margin: 4rem auto;
-  border-bottom: 8px solid white;
+  border-bottom: 8px solid var(--white);
 }
 
 .status {
-  /* Line 2 (Stroke) */
-    background: #E7F6FD;
+    background: var(--lightestblue);
     max-width:292px;
-    max-height:58px;
-    text-align:center;
+    text-align: center;
     padding: 0.5rem 3rem;
-    font-size: 2rem;
+    font-size: 4rem;
+    color:var(--plum);
 }
 
 .parameters ul li, .actions ul li {
@@ -136,13 +150,10 @@ body {
     box-sizing: border-box;
     width: 68.18px;
     height: 68.06px;
-    /* Yellow */
-    background: #F8D26D;
-    /* Timber */
-    border: 5px solid #DFA46D;
+    background: var(--yellow);
+    border: 5px solid var(--timber);
     border-radius: 50%;
-    /* Button shadow */
-    box-shadow: 0px 7px 0px #724D50;
+    box-shadow: 0px 7px 0px var(--plum);
     margin-left: 1rem;
     margin-right: 1rem;
     padding: 0.6rem;
