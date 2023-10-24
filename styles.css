@@ -98,7 +98,6 @@ body {
   width: 40px;
   background: url("images/icons.png") -25px -200px;
   display: inline-block;
-
 }
 
 .ball_sprite {
@@ -106,7 +105,6 @@ body {
   width: 40px;
   background: url("images/icons.png") -25px -290px;
   display: inline-block;
-
 }
 
 .view {
@@ -114,17 +112,50 @@ body {
     border: 7px solid var(--blue);
     width: 292px;
     height:280px;
-    margin-bottom: 0.75rem;
-    
+    margin-bottom: 0.75rem;    
 }
 
-.tamagotchi_sprite {
-  height: 130px;
-  width: 152px;
-  background: url("images/tamago.png") -40px -25px;
+#tamagotchi_sprite {
+  height: 140px;
+  width: 200px;
   margin: 4rem auto;
   border-bottom: 8px solid var(--white);
 }
+
+.tamagotchi_happy {
+  background: url("images/tamago.png") -20px -22px;
+}
+
+.tamagotchi_dead {
+  background: url("images/tamago.png") -20px -340px;
+  height: 120px !important;
+}
+
+.tamagotchi_sleepy {
+  background: url("images/tamago.png") -20px -497px;
+}
+
+.tamagotchi_sleeping {
+  background: url("images/tamago.png") -20px -676px;
+}
+
+.tamagotchi_hungry {
+  background: url("images/tamago.png") -20px -1032px;
+}
+
+.tamagotchi_eating {
+  background: url("images/tamago.png") -20px -1210px;
+}
+
+.tamagotchi_playing {
+  background: url("images/tamago.png") -40px -1580px;
+}
+
+.tamagotchi_bored {
+  background: url("images/tamago.png") -20px -1950px;
+}
+
+
 
 .status {
     background: var(--lightestblue);
