@@ -12,7 +12,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'VT323', sans-serif;
+  font-family: 'VT323', monospace;
 }
 
 .bar {
@@ -46,19 +46,24 @@ body {
     margin-bottom: 1.75rem;
     display: flex;
     flex-direction: column;
-   
-    
-
 }
 
 .parameters {
  margin: 0 auto;
  color: rgba(114, 77, 80, 1);
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+ font-size: 3.75rem;
+ line-height: 3.75rem;
 }
 
-.parameters ul li {
-  font-size: 4rem;
 
+.high_value {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 15%;
 }
 
 .heart_sprite {
@@ -113,8 +118,8 @@ body {
 .status {
     background: rgba(231, 246, 253, 1);
     max-width:292px;
-    text-align:center;
-    padding: 0.2rem 2rem;
+    text-align: center;
+    padding: 0.5rem 3rem;
     font-size: 4rem;
     color:rgba(114, 77, 80, 1);
 }
