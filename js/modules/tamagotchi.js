@@ -43,7 +43,7 @@ export default class Tamagotchi {
     this.decrementParameter(this.hunger);
     this.decrementParameter(this.fun);
 
-    if (this.hunger.value <= 0 && this.energy.value <= 0) {
+    if (this.hunger.value <= 0 || this.energy.value <= 0) {
       this.decrementParameter(this.health);
     }
 
